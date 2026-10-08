@@ -6,7 +6,7 @@ products:
 entities:
   - entity: humidifier
     class: humidifier
-    translation_key: extended
+    translation_only_key: extended
     dps:
       - id: 1
         type: boolean
@@ -24,6 +24,8 @@ entities:
             constraint: mode
             conditions:
               # Target humidity only applies when humidity-control mode is on
+              - dps_val: true
+                invalid: false
               - dps_val: false
                 invalid: true
       - id: 14
@@ -61,16 +63,14 @@ entities:
             value: strong
 
   - entity: switch
-    name: Humidify
-    icon: mdi:water-percent
+    translation_key: humidify
     dps:
       - id: 104
         type: boolean
         name: switch
 
   - entity: switch
-    name: Drying
-    icon: mdi:hair-dryer
+    translation_key: drying
     dps:
       - id: 105
         type: boolean
@@ -84,8 +84,7 @@ entities:
         name: switch
 
   - entity: switch
-    name: Vertical swing
-    icon: mdi:swap-vertical
+    translation_key: vertical_swing
     dps:
       - id: 102
         type: boolean

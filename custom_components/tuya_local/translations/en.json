@@ -425,7 +425,8 @@
                         "state": {
                             "laundry": "Dry clothes",
                             "purify": "Purify",
-                            "continuous": "Continuous"
+                            "continuous": "Continuous",
+                            "auto": "Auto"
                         }
                     }
                 }
@@ -762,7 +763,23 @@
                     "cloud_recipe": "Cloud Recipe",
                     "default": "Default",
                     "keep_warm": "Keep Warm",
-                    "preheat": "Preheat"
+                    "preheat": "Preheat",
+                    "reheat": "Reheat",
+                    "rice": "Rice",
+                    "soup": "Soup",
+                    "steam": "Steam",
+                    "boil": "Boil",
+                    "stew": "Stew",
+                    "slow_cook": "Slow cook",
+                    "fry": "Fry",
+                    "bake": "Bake",
+                    "pilaf": "Pilaf",
+                    "yogurt": "Yogurt",
+                    "pasta": "Pasta",
+                    "porridge": "Porridge",
+                    "sous_vide": "Sous-vide",
+                    "dumpling": "Dumplings",
+                    "deep_fry": "Deep fry"
                 }
             },
             "recording_mode": {
@@ -1495,6 +1512,21 @@
             },
             "watermark": {
                 "name": "Watermark"
+            },
+            "cooking": {
+                "name": "Cooking"
+            },
+            "keep_warm": {
+                "name": "Keep warm"
+            },
+            "humidify": {
+                "name": "Humidify"
+            },
+            "drying": {
+                "name": "Drying"
+            },
+            "vertical_swing": {
+                "name": "Vertical swing"
             }
         },
         "text": {

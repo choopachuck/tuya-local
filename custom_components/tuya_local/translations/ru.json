@@ -425,7 +425,8 @@
                         "state": {
                             "laundry": "Сушка одежды",
                             "purify": "Очистка",
-                            "continuous": "Непрерывный"
+                            "continuous": "Непрерывный",
+                            "auto": "Авто"
                         }
                     }
                 }
@@ -762,7 +763,23 @@
                     "cloud_recipe": "Облако",
                     "default": "По умолчанию",
                     "keep_warm": "Поддержание тепла",
-                    "preheat": "Предварительный нагрев"
+                    "preheat": "Предварительный нагрев",
+                    "reheat": "Разогрев",
+                    "rice": "Рис",
+                    "soup": "Суп",
+                    "steam": "Пар",
+                    "boil": "Варка",
+                    "stew": "Тушение",
+                    "slow_cook": "Томление",
+                    "fry": "Жарка",
+                    "bake": "Выпечка",
+                    "pilaf": "Плов",
+                    "yogurt": "Йогурт",
+                    "pasta": "Паста",
+                    "porridge": "Каша",
+                    "sous_vide": "Сувид",
+                    "dumpling": "Пельмени",
+                    "deep_fry": "Фритюр"
                 }
             },
             "recording_mode": {
@@ -1495,6 +1512,21 @@
             },
             "watermark": {
                 "name": "Водяной знак"
+            },
+            "cooking": {
+                "name": "Готовка"
+            },
+            "keep_warm": {
+                "name": "Подогрев"
+            },
+            "humidify": {
+                "name": "Увлажнение"
+            },
+            "drying": {
+                "name": "Сушка"
+            },
+            "vertical_swing": {
+                "name": "Вертикальный обдув"
             }
         },
         "text": {
