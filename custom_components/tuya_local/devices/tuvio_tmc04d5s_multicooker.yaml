@@ -1,0 +1,153 @@
+name: Multicooker
+products:
+  - id: 79obna5z5vz9ru7d
+    manufacturer: Tuvio
+    model: TMC04D5S
+entities:
+  - entity: switch
+    dps:
+      - id: 1
+        type: boolean
+        name: switch
+
+  - entity: switch
+    translation_key: cooking
+    dps:
+      - id: 2
+        type: boolean
+        name: switch
+
+  - entity: select
+    translation_key: recipe
+    dps:
+      - id: 3
+        type: string
+        name: option
+        mapping:
+          - dps_val: REHEAT
+            value: reheat
+          - dps_val: RICE
+            value: rice
+          - dps_val: SOUP
+            value: soup
+          - dps_val: STEAM
+            value: steam
+          - dps_val: BOIL
+            value: boil
+          - dps_val: STEW
+            value: stew
+          - dps_val: SLOW_COOK
+            value: slow_cook
+          - dps_val: FRY
+            value: fry
+          - dps_val: BAKE
+            value: bake
+          - dps_val: PIZZA
+            value: pizza
+          - dps_val: PLIAF
+            value: pilaf
+          - dps_val: YOGURT
+            value: yogurt
+          - dps_val: BREAD
+            value: bread
+          - dps_val: PASTA
+            value: pasta
+          - dps_val: MILK_PORRIGE
+            value: porridge
+          - dps_val: VACUUM
+            value: sous_vide
+          - dps_val: CAKE
+            value: cake
+          - dps_val: DUMPLING
+            value: dumpling
+          - dps_val: DEEP_FRY
+            value: deep_fry
+          - dps_val: DIY
+            value: custom
+
+  - entity: time
+    translation_key: reservation_time
+    category: config
+    dps:
+      - id: 5
+        type: integer
+        name: minute
+        range:
+          min: 0
+          max: 1440
+
+  - entity: time
+    translation_key: cooking_time
+    category: config
+    dps:
+      - id: 6
+        type: integer
+        name: minute
+        range:
+          min: 0
+          max: 720
+
+  - entity: sensor
+    translation_key: status
+    class: enum
+    dps:
+      - id: 9
+        type: string
+        name: sensor
+        mapping:
+          - dps_val: standby
+            value: standby
+          - dps_val: selectting
+            value: setting
+          - dps_val: preheat
+            value: pre_heating
+          - dps_val: cooking
+            value: cooking
+          - dps_val: warm
+            value: keeping_warm
+
+  - entity: number
+    class: temperature
+    dps:
+      - id: 18
+        type: integer
+        name: value
+        unit: C
+        range:
+          min: 30
+          max: 200
+        mapping:
+          - step: 1
+
+  - entity: lock
+    translation_key: child_lock
+    category: config
+    dps:
+      - id: 37
+        type: boolean
+        name: lock
+
+  - entity: switch
+    translation_key: keep_warm
+    dps:
+      - id: 101
+        type: boolean
+        name: switch
+
+  - entity: switch
+    translation_key: sound
+    category: config
+    dps:
+      - id: 102
+        type: boolean
+        name: switch
+
+  - entity: sensor
+    translation_key: time_remaining
+    class: duration
+    category: diagnostic
+    dps:
+      - id: 103
+        type: integer
+        name: sensor
+        unit: min

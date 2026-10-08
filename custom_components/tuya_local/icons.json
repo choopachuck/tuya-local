@@ -570,7 +570,23 @@
                     "custom": "mdi:food-fork-drink",
                     "cloud_recipe": "mdi:cloud-print",
                     "keep_warm": "mdi:heat-wave",
-                    "preheat": "mdi:fire"
+                    "preheat": "mdi:fire",
+                    "reheat": "mdi:microwave",
+                    "rice": "mdi:rice",
+                    "soup": "mdi:bowl-mix",
+                    "steam": "mdi:pot-steam",
+                    "boil": "mdi:pot-steam",
+                    "stew": "mdi:pot",
+                    "slow_cook": "mdi:pot",
+                    "fry": "mdi:fire",
+                    "bake": "mdi:bread-slice",
+                    "pilaf": "mdi:rice",
+                    "yogurt": "mdi:cow",
+                    "pasta": "mdi:noodles",
+                    "porridge": "mdi:bowl",
+                    "sous_vide": "mdi:thermometer-water",
+                    "dumpling": "mdi:dumpling",
+                    "deep_fry": "mdi:french-fries"
                 }
             },
             "recording_mode": {
@@ -1100,6 +1116,12 @@
                 "state": {
                     "off": "mdi:motion-sensor-off"
                 }
+            },
+            "cooking": {
+                "default": "mdi:pot-steam"
+            },
+            "keep_warm": {
+                "default": "mdi:heat-wave"
             }
         },
         "text": {
